@@ -27,16 +27,18 @@ const Navbar = () => {
             {/* Desktop Navigation (Hidden on Mobile) */}
             <nav className="hidden sm:flex space-x-2 lg:space-x-4">
               {navItems.map((item, index) => (
-                <Link
+                <a
                   key={index}
-                  to={`/${item.toLowerCase().replace(" ", "-")}`}
+                  href={`${item.toLowerCase().replace(" ", "-")}`}
                   onClick={() => setActiveNav(item)}
-                  className={`hover:text-black/90 border-b-2 border-white hover:border-black/70 px-3 py-2 text-sm font-medium transition duration-150`}
+                  className={` hover:text-black/90 border-b-2 border-white hover:border-black/70 px-3 py-2 text-sm font-medium transition duration-150
+                    `}
                 >
                   {item}
-                </Link>
+                </a>
               ))}
             </nav>
+           
 
             {/* 3. Call Us Button (Visible on All Devices) */}
             <a
