@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Send, MapPin, Phone, Mail } from "lucide-react";
+import ShopLocations from "../components/ShopLocations";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -37,7 +38,8 @@ const Contact = () => {
 
   return (
     <section className="lg:py-16 py-5 bg-white">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ShopLocations/>
+      <div className="max-w-5xl mx-auto px-4 pt-10 sm:px-6 lg:px-8">
         <div className="text-left mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black/80 mb-4">
             Get In Touch
