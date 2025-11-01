@@ -10,10 +10,10 @@ function App() {
       <Navbar />
       <AppRoutes />
       <Footer />
-      <WhatsAppButton
+      {/* <WhatsAppButton
         phoneNumber="919876543210"
         message="Hello, I'm interested in detailing services from your website."
-      />
+      /> */}
     </>
   );
 }
