@@ -95,12 +95,12 @@ const HeroSection = () => {
                         {/* Centered Call & WhatsApp Buttons */}
                         <div className="flex gap-4 justify-center">
                           <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-xs font-medium lg:text-sm text-xs transition-all duration-300 flex items-center justify-center space-x-2">
-                            <Phone size={20} />
+                            <Phone className="h-4 w-4" />
                             <span>Call Now</span>
                           </button>
 
                           <button className="bg-[#25D366] hover:bg-[#20b858] text-white px-6 py-2 rounded-xs font-medium lg:text-sm text-xs transition-all duration-300 flex items-center justify-center space-x-2">
-                            <MessageCircle size={20} />
+                            <MessageCircle className="h-4 w-4" />
                             <span>WhatsApp</span>
                           </button>
                         </div>
@@ -145,17 +145,15 @@ const HeroSection = () => {
         </div>
 
         {/* Floating Action Buttons for Mobile */}
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 md:hidden">
-          {/* WhatsApp Button */}
+        {/* <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3 md:hidden">
           <button className="bg-[#25D366] hover:bg-[#20b858] text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
             <MessageCircle size={24} />
           </button>
 
-          {/* Call Button */}
           <button className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
             <Phone size={24} />
           </button>
-        </div>
+        </div> */}
       </section>
 
       {/* Centered Quick Info Bar */}
