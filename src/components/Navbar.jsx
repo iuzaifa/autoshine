@@ -27,18 +27,16 @@ const Navbar = () => {
             {/* Desktop Navigation (Hidden on Mobile) */}
             <nav className="hidden sm:flex space-x-2 lg:space-x-4">
               {navItems.map((item, index) => (
-                <a
+                <Link
                   key={index}
-                  href={`${item.toLowerCase().replace(" ", "-")}`}
+                  to={`/${item.toLowerCase().replace(" ", "-")}`}
                   onClick={() => setActiveNav(item)}
-                  className={` hover:text-black/90 border-b-2 border-white hover:border-black/70 px-3 py-2 text-sm font-medium transition duration-150
-                    `}
+                  className={`hover:text-black/90 border-b-2 border-white hover:border-black/70 px-3 py-2 text-sm font-medium transition duration-150`}
                 >
                   {item}
-                </a>
+                </Link>
               ))}
             </nav>
-           
 
             {/* 3. Call Us Button (Visible on All Devices) */}
             <a
@@ -90,7 +88,7 @@ const Navbar = () => {
               key={item}
               href={`${item.toLowerCase().replace(" ", "-")}`}
               onClick={() => setIsOpen(false)}
-              className="block text-gray-700 hover:bg-blue-50 hover:text-blue-600 px-3 py-2 rounded-md text-base font-medium transition duration-150"
+              className="block text-gray-700 hover:bg-blue-50 hover:text-blue-600 px-3 py-2 lg:text-sm text-xs border-b border-slate-100 font-medium transition duration-150"
             >
               {item}
             </a>

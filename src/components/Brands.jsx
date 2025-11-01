@@ -80,7 +80,6 @@ const Brands = () => {
           slidesToShow: 2,
           arrows: false,
           dots: false,
-          infinite: false,
         },
       },
       {
@@ -89,7 +88,6 @@ const Brands = () => {
           slidesToShow: 2, // Keeps 2 logos visible
           arrows: false,
           dots: false,
-          infinite: false,
         },
       },
     ],
